@@ -19,7 +19,7 @@
 
 int		ft_atoi(const char *str);
 void	ft_kill(int pid, char c);
-void	ft_error();
+void	ft_error(void);
 void	ft_signal(int signal);
 
 #endif

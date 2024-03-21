@@ -14,7 +14,7 @@
 
 void	ft_signal(int signal)
 {
-	static char c = 0;
+	static char	c = 0;
 	static int	i = 0;
 
 	if (signal == SIGUSR1)
@@ -28,8 +28,7 @@ void	ft_signal(int signal)
 	}
 }
 
-//consider void main!!
-int main(void)
+void	main(void)
 {
 	signal(SIGUSR1, ft_signal);
 	signal(SIGUSR2, ft_signal);

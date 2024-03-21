@@ -17,7 +17,7 @@ int	ft_atoi(const char *str)
 	int	i;
 	int	res;
 	int	sign;
-	
+
 	i = 0;
 	res = 0;
 	sign = 1;
@@ -53,14 +53,13 @@ void	ft_kill(int pid, char c)
 	}
 }
 
-void	ft_error()
+void	ft_error(void)
 {
 	write(2, "Error!\n", 7);
 	exit(1);
 }
 
-//consider void main!!
-int main(int ac, char **av)
+void	main(int ac, char **av)
 {
 	char	*s;
 	int		pid;
