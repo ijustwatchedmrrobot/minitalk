@@ -28,7 +28,7 @@ void	ft_signal(int signal)
 	}
 }
 
-void	main(void)
+int	main(void)
 {
 	signal(SIGUSR1, ft_signal);
 	signal(SIGUSR2, ft_signal);

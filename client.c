@@ -59,7 +59,7 @@ void	ft_error(void)
 	exit(1);
 }
 
-void	main(int ac, char **av)
+int	main(int ac, char **av)
 {
 	char	*s;
 	int		pid;
