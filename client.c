@@ -64,10 +64,12 @@ int	main(int ac, char **av)
 	char	*s;
 	int		pid;
 
-	pid = ft_atoi(av[1]);
-	s = av[2];
 	if (ac == 3)
 	{
+		pid = ft_atoi(av[1]);
+		if (pid < 0)
+			ft_error();
+	        s = av[2];
 		while (*s)
 		{
 			ft_kill(pid, *s);
