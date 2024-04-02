@@ -69,7 +69,7 @@ int	main(int ac, char **av)
 		pid = ft_atoi(av[1]);
 		if (pid < 0)
 			ft_error();
-	        s = av[2];
+		s = av[2];
 		while (*s)
 		{
 			ft_kill(pid, *s);
@@ -78,4 +78,5 @@ int	main(int ac, char **av)
 	}
 	else
 		ft_error();
+	return (0);
 }
